@@ -1,5 +1,5 @@
-**AI-Based Crop Leaf Disease Detection and Weather-Driven Risk Prediction System for Smart Agriculture 🎯
-Basic Details**
+**AI-Based Crop Leaf Disease Detection and Weather-Driven Risk Prediction System for Smart Agriculture** 🎯
+
 
 **Team Name**: Zentrix
 
@@ -179,5 +179,6 @@ Parvathy Santhosh C: Backend development, AI model integration, API implementati
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 
 
