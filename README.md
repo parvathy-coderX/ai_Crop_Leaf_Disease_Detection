@@ -1,24 +1,24 @@
-AI-Based Crop Leaf Disease Detection and Weather-Driven Risk Prediction System for Smart Agriculture 🎯
-Basic Details
+**AI-Based Crop Leaf Disease Detection and Weather-Driven Risk Prediction System for Smart Agriculture 🎯
+Basic Details**
 
-Team Name: Zentrix
+**Team Name**: Zentrix
 
-Team Members:
+**Team Member**s:
 
 Parvathy Santhosh C - MACE
 
-Hosted Project Link:
-[Add your hosted project link here]
+**Hosted Project Link**:
+https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection
 
-Project Description
+**Project Description**
 
 This system allows farmers to upload images of crop leaves and automatically detect diseases using AI. It also predicts weather-driven disease risks and provides preventive recommendations to protect crops.
 
-The Problem Statement
+**The Problem Statement**
 
 Farmers often face crop losses due to undiagnosed diseases and unpredictable weather conditions. Early disease detection and weather-based risk prediction are crucial to reduce losses and improve yield.
 
-The Solution
+**The Solution**
 
 We use AI-based image recognition to detect leaf diseases and weather analysis to predict disease risks. The system provides real-time disease information, risk levels, and actionable recommendations to help farmers take timely preventive measures.
 
@@ -81,16 +81,7 @@ Access API endpoints via http://localhost:5000/
 Upload leaf images via /disease/predict endpoint
 
 Project Documentation
-Screenshots (Add your own screenshots)
-
-![Screenshot1](Add screenshot 1 here)
-Caption: Disease detection result for uploaded leaf image
-
-![Screenshot2](Add screenshot 2 here)
-Caption: Weather-based disease risk prediction dashboard
-
-![Screenshot3](Add screenshot 3 here)
-Caption: Crop health forecast and recommendations
+**Video**
 
 Diagrams
 
@@ -188,4 +179,5 @@ Parvathy Santhosh C: Backend development, AI model integration, API implementati
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 
