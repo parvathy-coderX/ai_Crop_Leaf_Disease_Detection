@@ -1,0 +1,72 @@
+============================================================
+DISEASE DETECTION MODEL SUMMARY
+============================================================
+
+Training Date: 2026-02-28 04:04:32
+
+Configuration:
+  - Image Size: 128x128
+  - Batch Size: 8
+  - Epochs: 3
+  - Learning Rate: 0.001
+  - Dropout Rate: 0.5
+
+Dataset:
+  - Classes: 15
+      0: Pepper__bell___Bacterial_spot
+      1: Pepper__bell___healthy
+      2: Potato___Early_blight
+      3: Potato___Late_blight
+      4: Potato___healthy
+      5: Tomato_Bacterial_spot
+      6: Tomato_Early_blight
+      7: Tomato_Late_blight
+      8: Tomato_Leaf_Mold
+      9: Tomato_Septoria_leaf_spot
+      10: Tomato_Spider_mites_Two_spotted_spider_mite
+      11: Tomato__Target_Spot
+      12: Tomato__Tomato_YellowLeaf__Curl_Virus
+      13: Tomato__Tomato_mosaic_virus
+      14: Tomato_healthy
+  - Training samples: 16516
+  - Validation samples: 4122
+
+Model Architecture:
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(None, 128, 128, 3)]     0         
+                                                                 
+ random_flip (RandomFlip)    (None, 128, 128, 3)       0         
+                                                                 
+ random_rotation (RandomRot  (None, 128, 128, 3)       0         
+ ation)                                                          
+                                                                 
+ random_zoom (RandomZoom)    (None, 128, 128, 3)       0         
+                                                                 
+ mobilenetv2_1.00_128 (Func  (None, 4, 4, 1280)        2257984   
+ tional)                                                         
+                                                                 
+ global_average_pooling2d (  (None, 1280)              0         
+ GlobalAveragePooling2D)                                         
+                                                                 
+ dense (Dense)               (None, 256)               327936    
+                                                                 
+ dropout (Dropout)           (None, 256)               0         
+                                                                 
+ dense_1 (Dense)             (None, 128)               32896     
+                                                                 
+ dropout_1 (Dropout)         (None, 128)               0         
+                                                                 
+ dense_2 (Dense)             (None, 15)                1935      
+                                                                 
+=================================================================
+Total params: 2620751 (10.00 MB)
+Trainable params: 362767 (1.38 MB)
+Non-trainable params: 2257984 (8.61 MB)
+_________________________________________________________________
+
+Final Performance:
+  - Validation Loss: 0.7265
+  - Validation Accuracy: 0.7875 (78.75%)

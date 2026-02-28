@@ -1,0 +1,95 @@
+{
+  "national_schemes": [
+    {
+      "id": "NS001",
+      "name": "Pradhan Mantri Fasal Bima Yojana",
+      "type": "Crop Insurance",
+      "description": "Provides insurance coverage and financial support to farmers in case of crop failure due to natural calamities, pests, and diseases.",
+      "eligibility": "All farmers growing notified crops in notified areas.",
+      "benefits": "Financial compensation for crop loss.",
+      "website": "https://pmfby.gov.in"
+    },
+    {
+      "id": "NS002",
+      "name": "Pradhan Mantri Krishi Sinchayee Yojana",
+      "type": "Irrigation Support",
+      "description": "Improves farm productivity by ensuring better irrigation facilities.",
+      "eligibility": "Farmers across India.",
+      "benefits": "Subsidy for irrigation equipment.",
+      "website": "https://pmksy.gov.in"
+    }
+  ],
+
+  "state_schemes": {
+    "Kerala": [
+      {
+        "id": "KL001",
+        "name": "Kerala State Crop Insurance Scheme",
+        "type": "Crop Insurance",
+        "description": "State-level crop insurance support for farmers in Kerala.",
+        "benefits": "Financial aid for crop damage due to diseases and climate conditions.",
+        "office": "Nearest Krishi Bhavan",
+        "contact": "Department of Agriculture Development & Farmers’ Welfare, Kerala"
+      },
+      {
+        "id": "KL002",
+        "name": "Kerala Vegetable Development Programme",
+        "type": "Subsidy",
+        "description": "Provides subsidies for vegetable cultivation and disease control.",
+        "benefits": "Financial assistance and technical support."
+      }
+    ],
+
+    "Tamil Nadu": [
+      {
+        "id": "TN001",
+        "name": "Tamil Nadu Crop Protection Scheme",
+        "type": "Crop Protection",
+        "description": "Financial support for crop disease prevention and pest management.",
+        "benefits": "Subsidy for pesticides and organic treatments."
+      }
+    ],
+
+    "Karnataka": [
+      {
+        "id": "KA001",
+        "name": "Raitha Siri Scheme",
+        "type": "Farmer Support",
+        "description": "Encourages cultivation of pulses and supports farmers financially.",
+        "benefits": "Incentives for crop diversification."
+      }
+    ]
+  },
+
+  "crop_specific_support": {
+    "Rice": [
+      {
+        "scheme": "Pradhan Mantri Fasal Bima Yojana",
+        "support_type": "Disease & flood insurance coverage"
+      }
+    ],
+    "Banana": [
+      {
+        "scheme": "State Horticulture Subsidy",
+        "support_type": "Subsidy for disease-resistant varieties"
+      }
+    ],
+    "Coconut": [
+      {
+        "scheme": "Coconut Development Board Support",
+        "support_type": "Technical and financial assistance"
+      }
+    ]
+  },
+
+  "agriculture_offices": {
+    "Kerala": {
+      "example_location": "Krishi Bhavan, Kochi",
+      "map_hint": "Search 'Krishi Bhavan near me' in Google Maps"
+    },
+    "Tamil Nadu": {
+      "example_location": "District Agriculture Office",
+      "map_hint": "Search 'Agriculture Office near me'"
+    }
+  }
+}

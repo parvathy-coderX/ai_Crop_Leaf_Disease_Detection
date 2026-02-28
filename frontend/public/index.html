@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#059669" />
+    <meta
+      name="description"
+      content="SmartAgriAI - AI-powered agricultural assistant for disease detection, weather risk assessment, and government scheme recommendations"
+    />
+    <meta name="keywords" content="agriculture, AI, disease detection, weather, farming, government schemes, crop disease" />
+    <meta name="author" content="SmartAgriAI" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="SmartAgriAI - Smart Agriculture Assistant" />
+    <meta property="og:description" content="AI-powered platform for crop disease detection, weather risk assessment, and government scheme recommendations" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <meta property="og:url" content="https://smartagriai.com" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SmartAgriAI - Smart Agriculture Assistant" />
+    <meta name="twitter:description" content="AI-powered platform for crop disease detection, weather risk assessment, and government scheme recommendations" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/twitter-image.jpg" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="SmartAgriAI" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/icons/icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="%PUBLIC_URL%/icons/icon-167x167.png" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    
+    <!-- Preconnect to important domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://maps.googleapis.com" />
+    <link rel="preconnect" href="https://api.openweathermap.org" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Google Maps API with environment variable -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=%REACT_APP_GOOGLE_MAPS_API_KEY%&libraries=places&callback=Function.prototype"></script>
+    
+    <title>SmartAgriAI - Smart Agriculture Assistant</title>
+    
+    <style>
+      /* Critical CSS for initial page load */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: linear-gradient(135deg, #f0fdf4 0%, #f8fafc 100%);
+        min-height: 100vh;
+      }
+      
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      /* Loading animation */
+      .initial-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      
+      .loader-content {
+        text-align: center;
+        color: white;
+      }
+      
+      .loader-logo {
+        font-size: 48px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        animation: pulse 2s infinite;
+      }
+      
+      .loader-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: white;
+        animation: spin 1s ease-in-out infinite;
+        margin: 20px auto;
+      }
+      
+      .loader-text {
+        font-size: 18px;
+        opacity: 0.9;
+        animation: fadeInUp 1s ease-out;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      /* Skip to content link for accessibility */
+      .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #059669;
+        color: white;
+        padding: 8px;
+        z-index: 100;
+        text-decoration: none;
+      }
+      
+      .skip-to-content:focus {
+        top: 0;
+      }
+      
+      /* Fallback styles for when JS is disabled */
+      .no-js {
+        padding: 20px;
+        text-align: center;
+        background: #fee2e2;
+        color: #991b1b;
+        border: 1px solid #fecaca;
+        border-radius: 8px;
+        margin: 20px;
+      }
+      
+      /* Basic responsive container */
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      
+      @media (max-width: 640px) {
+        .container {
+          padding: 0 12px;
+        }
+      }
+    </style>
+    
+    <!-- Fallback for no JavaScript -->
+    <noscript>
+      <div class="no-js">
+        <h2>JavaScript Required</h2>
+        <p>SmartAgriAI requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+      </div>
+    </noscript>
+  </head>
+  
+  <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#root" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Initial loader (will be hidden by React) -->
+    <div id="initial-loader" class="initial-loader">
+      <div class="loader-content">
+        <div class="loader-logo">
+          🌾 SmartAgriAI
+        </div>
+        <div class="loader-spinner"></div>
+        <div class="loader-text">
+          Loading your smart agriculture assistant...
+        </div>
+      </div>
+    </div>
+    
+    <!-- Root element for React -->
+    <div id="root"></div>
+    
+    <!-- Google Maps initialization callback -->
+    <script>
+      // Google Maps will call this when loaded
+      window.initMap = function() {
+        console.log('Google Maps loaded successfully');
+        // Dispatch an event that React can listen to
+        window.dispatchEvent(new Event('google-maps-loaded'));
+      };
+      
+      // Hide loader when React is ready
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          const loader = document.getElementById('initial-loader');
+          if (loader) {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+              loader.style.display = 'none';
+            }, 500);
+          }
+        }, 1500);
+      });
+      
+      // Check if browser is supported
+      (function() {
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+        if (isIE) {
+          alert('Internet Explorer is not supported. Please use a modern browser like Chrome, Firefox, or Edge.');
+        }
+      })();
+      
+      // Register service worker for PWA
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js').then(
+            function(registration) {
+              console.log('Service Worker registered successfully:', registration.scope);
+            },
+            function(err) {
+              console.log('Service Worker registration failed:', err);
+            }
+          );
+        });
+      }
+    </script>
+    
+    <!-- Fallback for browsers that don't support JavaScript modules -->
+    <script nomodule>
+      alert('Your browser does not support modern JavaScript features. Please update to a newer browser.');
+    </script>
+  </body>
+</html>

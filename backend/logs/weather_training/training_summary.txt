@@ -1,0 +1,35 @@
+============================================================
+WEATHER RISK MODEL - TRAINING SUMMARY
+============================================================
+
+Training Date: 2026-02-28 04:22:57
+
+Dataset Information:
+  - Total samples: 1404
+  - Features: 18
+  - Classes: 3 (Low, Medium, High)
+
+Training Configuration:
+  - Test size: 0.2
+  - CV folds: 5
+  - Random seed: 42
+
+Model Performance:
+  - Test Accuracy: 0.9146 (91.46%)
+
+Classification Report:
+
+  Low Risk:
+    Precision: 0.9619
+    Recall: 0.9665
+    F1-Score: 0.9642
+
+  Medium Risk:
+    Precision: 0.7333
+    Recall: 0.7333
+    F1-Score: 0.7333
+
+  High Risk:
+    Precision: 0.8462
+    Recall: 0.8148
+    F1-Score: 0.8302
