@@ -81,8 +81,8 @@ Access API endpoints via http://localhost:5000/
 Upload leaf images via /disease/predict endpoint
 
 Project Documentation
-**Video**
-
+**Screenshort*[*
+](https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection/blob/2ad3422c189e4f68dea7f8dcc01e5653833d2f7a/Screenshot%202026-02-28%20102320.png)
 Diagrams
 
 System Architecture:
@@ -179,6 +179,7 @@ Parvathy Santhosh C: Backend development, AI model integration, API implementati
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 
 
 
