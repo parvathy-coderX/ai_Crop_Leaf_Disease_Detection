@@ -21,9 +21,9 @@ Farmers often face crop losses due to undiagnosed diseases and unpredictable wea
 **The Solution**
 
 We use AI-based image recognition to detect leaf diseases and weather analysis to predict disease risks. The system provides real-time disease information, risk levels, and actionable recommendations to help farmers take timely preventive measures.
-
-Technical Details
-Technologies/Components Used
+**video**
+**Technical Details**
+**Technologies/Components Used**
 
 Software:
 
@@ -179,6 +179,7 @@ Parvathy Santhosh C: Backend development, AI model integration, API implementati
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 
 
 
