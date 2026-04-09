@@ -1,142 +1,184 @@
-**AI-Based Crop Leaf Disease Detection and Weather-Driven Risk Prediction System for Smart Agriculture** 🎯
 
 
+# 🚀 **AI-Based Crop Leaf Disease Detection and Weather-Driven Risk Prediction System for Smart Agriculture**
 
-**Team Member**:
+## 🌟 Overview
 
-Parvathy Santhosh C - MACE
+An intelligent system that helps farmers **detect crop leaf diseases using AI** and **predict weather-driven risks**, enabling early intervention and better crop management.
 
-**Hosted Project Link**:
-https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection
+---
 
-**Video**: https://drive.google.com/file/d/1RoPzNlWmfQWAc3aVT9mTkabX80EtuIOl/view?usp=sharing
+## 🎯 Key Highlights
 
-**Project Description**
+* 🌿 AI-powered leaf disease detection
+* 🌦️ Weather-based disease risk prediction
+* 💡 Preventive recommendations for farmers
+* 📊 Multi-crop support with optimized thresholds
+* 🔮 Forecast-based future risk analysis
 
-This system allows farmers to upload images of crop leaves and automatically detect diseases using AI. It also predicts weather-driven disease risks and provides preventive recommendations to protect crops.
+---
 
-**The Problem Statement**
+## 👩‍💻 Author
 
-Farmers often face crop losses due to undiagnosed diseases and unpredictable weather conditions. Early disease detection and weather-based risk prediction are crucial to reduce losses and improve yield.
+**Parvathy Santhosh C**
+B.Tech in AI & ML, MACE
 
-**The Solution**
+---
 
-We use AI-based image recognition to detect leaf diseases and weather analysis to predict disease risks. The system provides real-time disease information, risk levels, and actionable recommendations to help farmers take timely preventive measures.
-**video**
-**Technical Details**
-**Technologies/Components Used**
+## 🔗 Project Repository
 
-Software:
+(https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection)
 
-Languages: Python
+---
 
-Frameworks: Flask
+## 🎥 Demo Video
 
-Libraries: TensorFlow / PyTorch (for AI model), OpenCV, Pillow, NumPy, Pandas, Requests
+Watch here: [https://drive.google.com/file/d/1RoPzNlWmfQWAc3aVT9mTkabX80EtuIOl/view?usp=sharing](https://drive.google.com/file/d/1RoPzNlWmfQWAc3aVT9mTkabX80EtuIOl/view?usp=sharing)
 
-Tools: VS Code, Git
+---
 
-Features
+## 📌 Project Description
 
-Key Features:
+This system allows users to upload images of crop leaves and automatically detect diseases using AI. It also analyzes weather conditions to predict disease risks and provides preventive recommendations to protect crops.
 
-Leaf Image Disease Detection: Upload a leaf image to identify the disease using AI.
+---
 
-Weather-Based Disease Risk Prediction: Analyze local weather to estimate disease risk levels.
+## ❗ Problem Statement
 
-Preventive Recommendations: Provides actionable guidance based on disease and weather risk.
+Farmers often face significant crop losses due to:
 
-Weather Forecast Integration: Shows upcoming weather conditions that may impact crop health.
+* Late detection of plant diseases
+* Unpredictable weather conditions
 
-Crop Database: Supports multiple crops with crop-specific optimal conditions and thresholds.
+Early disease identification and weather-based risk prediction are essential to reduce losses and improve agricultural productivity.
 
-Unique Features Compared to Existing Systems:
+---
 
-Combines AI image-based detection with weather-driven risk prediction.
+## 💡 Solution
 
-Provides real-time recommendations for disease prevention.
+The system combines:
 
-Forecast analysis for future disease risks.
+* **AI-based image recognition** for disease detection
+* **Weather data analysis** for risk prediction
 
-Supports multiple crops with crop-specific thresholds.
+It provides:
 
-Implementation
-Installation
+* Real-time disease detection
+* Risk level classification
+* Actionable preventive recommendations
 
+---
 
+## ⚙️ Tech Stack
 
-Navigate to the project folder:
+* **Languages:** Python
+* **Framework:** Flask
+* **Libraries:** TensorFlow / PyTorch, OpenCV, Pillow, NumPy, Pandas, Requests
+* **Tools:** VS Code, Git
 
+---
+
+## 🚀 Features
+
+### 🔍 Core Features
+
+* Leaf Disease Detection from uploaded images
+* Weather-Based Risk Prediction
+* Preventive Recommendations
+* 5-Day Weather Forecast Integration
+
+### 🌟 Unique Features
+
+* Combines AI + weather analytics
+* Real-time actionable insights
+* Multi-crop support with custom thresholds
+
+---
+
+## 🛠️ Installation & Setup
+
+```bash
+git clone https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection.git
 cd SmartAgriAI
-
-Install required Python libraries:
-
 pip install -r requirements.txt
-Run
 python app.py
+```
 
-Access API endpoints via http://localhost:5000/
+👉 Access API at: `http://localhost:5000/`
 
-Upload leaf images via /disease/predict endpoint
+---
 
-Project Documentation
-**Screenshort*[*
-](https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection/blob/2ad3422c189e4f68dea7f8dcc01e5653833d2f7a/Screenshot%202026-02-28%20102320.png)
-Diagrams
+## 🔄 Workflow
 
-System Architecture:
+### System Flow
 
-Upload leaf image → Preprocessing → AI Model → Disease Prediction → Display results
+* Upload leaf image → Preprocessing → AI Model → Disease Prediction
+* Weather API → Forecast Data → Risk Analysis → Recommendations
 
-Weather API → Current weather + Forecast → Risk analysis → Recommendations
+### Application Flow
 
-Application Workflow:
+1. User uploads leaf image
+2. System detects disease with confidence score
+3. Weather data is fetched
+4. Risk level is calculated
+5. Recommendations are displayed
 
-User uploads leaf image
+---
 
-System predicts disease with confidence
+## 📸 Screenshot
 
-System fetches weather and predicts disease risk
+*(Add your screenshot here)*
 
-Recommendations displayed based on risk level
+---
 
-API Documentation
+## 📡 API Documentation
 
-Base URL: http://localhost:5000/
+### 🔹 Base URL
 
-Endpoints:
+```
+http://localhost:5000/
+```
 
-POST /disease/predict
+---
 
-Description: Detect disease from uploaded leaf image
+### 🔹 Disease Detection
 
-Form-data:
+**POST /disease/predict**
 
-image (file): Leaf image
+**Input:**
 
-Response:
+* `image` (file)
 
+**Response:**
+
+```json
 {
   "success": true,
   "disease": "Leaf Blight",
   "confidence": 92.5,
   "image_path": "20260228_123456_ab12cd34.jpg"
 }
+```
 
-POST /weather/risk
+---
 
-Description: Predict weather-based disease risk
+### 🔹 Weather Risk Prediction
 
-JSON body:
+**POST /weather/risk**
 
+**Input:**
+
+```json
 {
   "lat": 12.9716,
   "lon": 77.5946,
   "crop_type": "rice"
 }
+```
 
-Response:
+**Response:**
 
+```json
 {
   "success": true,
   "data": {
@@ -146,40 +188,53 @@ Response:
     "recommendation": "Take preventive measures immediately."
   }
 }
+```
 
-GET /weather/forecast
+---
 
-Description: Get 5-day weather forecast for a location
+### 🔹 Weather Forecast
 
-Query parameters: lat, lon
+**GET /weather/forecast**
 
-Response: Forecast JSON array
+**Params:** `lat`, `lon`
 
-Project Demo
+**Response:** Forecast data (JSON)
 
-Video:
-[Add your demo video link here]
-Caption: Demonstrates leaf disease detection, weather risk prediction, and recommendations.
+---
 
-AI Tools Used (Optional)
+## 🤖 AI Tools Used
 
-Tool: ChatGPT, GitHub Copilot
+* ChatGPT
+* GitHub Copilot
 
-Purpose: Boilerplate code, debugging assistance, API integration
+**Usage:**
 
-Percentage of AI-generated code: ~20%
+* Boilerplate code
+* Debugging assistance
+* API integration
 
-Human Contributions: AI model design, backend integration, preprocessing, recommendation logic
+**AI Contribution:** ~20%
+**Human Contribution:** Model design, backend logic, integration, testing
 
-Team Contributions
+---
 
-Parvathy Santhosh C: Backend development, AI model integration, API implementation, testing, documentation
+## 🔮 Future Enhancements
 
-License
+* 📱 Mobile app integration
+* 🌍 Real-time IoT sensor data
+* 📊 Advanced analytics dashboard
+* 🌱 More crop datasets
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
 
+## 🤝 Contribution
 
+Contributions are welcome! Feel free to fork and improve the project.
 
+---
 
+## 📄 License
 
+This project is licensed under the MIT License.
+
+---
