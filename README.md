@@ -32,7 +32,7 @@ B.Tech in AI & ML, MACE
 ---
 ## 🧾 Approach Document
 
-Watch here: [https://drive.google.com/file/d/1RoPzNlWmfQWAc3aVT9mTkabX80EtuIOl/view?usp=sharing](https://drive.google.com/file/d/1RoPzNlWmfQWAc3aVT9mTkabX80EtuIOl/view?usp=sharing)
+https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection/blob/main/Approach%20Document.pdf
 
 ---
 
