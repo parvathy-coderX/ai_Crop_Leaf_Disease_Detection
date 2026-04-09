@@ -30,6 +30,11 @@ B.Tech in AI & ML, MACE
 (https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection)
 
 ---
+## 🧾 Approach Document
+
+Watch here: [https://drive.google.com/file/d/1RoPzNlWmfQWAc3aVT9mTkabX80EtuIOl/view?usp=sharing](https://drive.google.com/file/d/1RoPzNlWmfQWAc3aVT9mTkabX80EtuIOl/view?usp=sharing)
+
+---
 
 ## 🎥 Demo Video
 
