@@ -1,14 +1,15 @@
 **AI-Based Crop Leaf Disease Detection and Weather-Driven Risk Prediction System for Smart Agriculture** 🎯
 
 
-**Team Name**: Zentrix
 
-**Team Member**s:
+**Team Member**:
 
 Parvathy Santhosh C - MACE
 
 **Hosted Project Link**:
 https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection
+
+**Video**: https://drive.google.com/file/d/1RoPzNlWmfQWAc3aVT9mTkabX80EtuIOl/view?usp=sharing
 
 **Project Description**
 
