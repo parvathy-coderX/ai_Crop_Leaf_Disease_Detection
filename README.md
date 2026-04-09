@@ -62,9 +62,7 @@ Supports multiple crops with crop-specific thresholds.
 Implementation
 Installation
 
-Clone the repository:
 
-git clone [your_repo_link]
 
 Navigate to the project folder:
 
