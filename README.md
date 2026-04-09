@@ -147,7 +147,7 @@ http://localhost:5000/
 
 **Input:**
 
-* `image` (file)
+https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection/blob/main/septoria-spot-tomato-plant-ea2ab44d-e6f21d609dd04b2f96d96a33e98aab07.jpg
 
 **Response:**
 
