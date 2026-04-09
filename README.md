@@ -127,7 +127,7 @@ python app.py
 
 ## 📸 Screenshot
 
-*(Add your screenshot here)*
+(https://github.com/parvathy-coderX/ai_Crop_Leaf_Disease_Detection/blob/main/Screenshot%202026-02-28%20102320.png)
 
 ---
 
